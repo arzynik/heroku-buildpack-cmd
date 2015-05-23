@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
 
-c="$(cat $1/.buildrun)"
-echo $c
-$c $1 $2 $3
+$1/.buildrun $1 $2 $3
 
