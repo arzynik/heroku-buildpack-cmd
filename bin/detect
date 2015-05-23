@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+if [ -f $1/.buildrun ]; then
+  echo "Run after build"
+  exit 0
+else
+  echo "no .buildrun file"
+  exit 1
+fi
