@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-touch $1/test
+cmd = $(cat $1/.buildrun)
+$cmd $1 $2 $3
+
