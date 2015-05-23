@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
+chmod 0777 $1/.buildrun
 $1/.buildrun $1 $2 $3
+rm -f $1/.buildrun
 
